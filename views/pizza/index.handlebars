@@ -1,0 +1,25 @@
+<h1>Pizza</h1>
+
+<div class="space_below">
+    <a href="/pizza/add">Add pizza</a>
+</div>
+
+<table>
+    <tr>
+        <th>Size</th>
+        <th>Name</th>
+        <th>Description</th>
+    </tr>
+    {{#each pizzas}}
+    <tr> 
+        <td>{{size}}</td>
+        <td>{{name}}</td>
+        <td>{{description}}</td>
+       
+        {{!-- <td>
+            <a href="/pizza/edit/77">Edit</a>
+
+        </td> --}}
+        </tr> 
+    {{/each}}
+</table>
